@@ -28,3 +28,12 @@ let myuser:user={
 
 }
 // console.log(myuser._id=1);this is only for the readonly
+// union
+let score:number| string=33
+
+let seat:"asilse"|"jsdh"
+
+
+// tuples
+
+
