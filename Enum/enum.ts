@@ -1,19 +1,25 @@
-enum seatChoice{
-    AISlE=10,
-    Middle,
-    window
-}
-const hcSeat=seatChoice.AISlE
+type whattodo="up"|"down"|"right"|"left";
+function dosomething(what :whattodo){
+console.log(what);
 
 
-// interfaces
-interface user{
-    email:string,
-    userid:number,
-    startTrial():string
 }
-const praneeth:user={email:"praneeth",userid:2,
-    startTrial:()=>{
-        return "trail started"
-    }
+dosomething("up");
+dosomething("down");
+dosomething("right");
+dosomething("left");
+//  to overcome this the clear way to read and write is enum
+//Enums (short for enumerations) in TypeScript are a feature that allows you to define a set of named constants.
+enum Direction{
+    Up,
+    Down,
+    Right,
+    Left
 }
+
+function DosomethingCrazy(what:Direction){
+    console.log(what);
+    
+
+}
+DosomethingCrazy(Direction.Left)
